@@ -1,0 +1,9 @@
+<suite name="Automation Practice Test Suite" parallel="methods" thread-count="4" verbose="1">
+	<test name="UI Automation Test">
+		<classes>
+			<class name="com.ui.test.LoginTest" />
+
+		</classes>
+	</test>
+
+</suite>
