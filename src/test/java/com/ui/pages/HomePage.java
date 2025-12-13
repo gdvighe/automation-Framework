@@ -4,7 +4,6 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 import com.Utility.BrowserUtility;
 import com.Utility.JSONUtility;
@@ -15,8 +14,8 @@ import com.constant.Browser;
 import static com.constant.Env.*;
 
 public class HomePage extends BrowserUtility {
-
-	Logger logger = LoggerUtility.getLogger(this.getClass());
+	
+	Logger logger= LoggerUtility.getLogger(this.getClass());
 
 	private static final By SIGN_IN_LINK_LOCATOR = By.xpath("//a[contains(text(),\"Sign in\")]");
 
@@ -29,27 +28,13 @@ public class HomePage extends BrowserUtility {
 	//		goToWebsite(readProperty(QA, "URL"));
 		
 	}
-
-	public HomePage(WebDriver lambdaDriver)
-	{ super(lambdaDriver);// to call the parent class constructor from child class constructor
-	 
-	goToWebsite(JSONUtility.readJSON(QA).getUrl()); }
-	 
 	
-
-
 public LoginPage goToLoginPage() {
 	logger.info("Trying to perform click to go to Sign in page");
-	
 	clickOn(SIGN_IN_LINK_LOCATOR);
 	LoginPage loginPage = new LoginPage(getDriver()); 
 	return loginPage;
 
-}
-
-public void quitBrowser() {
-	// TODO Auto-generated method stub
-	
 }
 
 }
