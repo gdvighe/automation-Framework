@@ -1,48 +1,44 @@
-2025-12-07 19:42:07[main] [INFO] com.ui.listeners.TestListeners Test suite Started 
-2025-12-07 19:42:07[main] [INFO] com.ui.test.LoginTest Load the homePage of the Website 
-2025-12-07 19:42:07[main] [INFO] com.ui.pages.HomePage Launching the Browser: CHROME | Headless: false 
-2025-12-07 19:42:13[main] [INFO] com.ui.pages.HomePage Visiting the websitehttp://www.automationpractice.pl 
-2025-12-07 19:42:19[main] [INFO] com.ui.listeners.TestListeners loginTest 
-2025-12-07 19:42:19[main] [INFO] com.ui.listeners.TestListeners Verify valid user is able to login to the application 
-2025-12-07 19:42:19[main] [INFO] com.ui.listeners.TestListeners [e2e, sanity] 
-2025-12-07 19:42:19[main] [INFO] com.ui.pages.HomePage Trying to perform click to go to Sign in page 
-2025-12-07 19:42:19[main] [INFO] com.ui.pages.HomePage Finding element with locator By.xpath: //a[contains(text(),"Sign in")] 
-2025-12-07 19:42:19[main] [INFO] com.ui.pages.HomePage Element found and performing Click 
-2025-12-07 19:42:21[main] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: email 
-2025-12-07 19:42:21[main] [INFO] com.ui.pages.LoginPage Element found now enter text gauravv@gmail.com 
-2025-12-07 19:42:21[main] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: passwd 
-2025-12-07 19:42:21[main] [INFO] com.ui.pages.LoginPage Element found now enter text password 
-2025-12-07 19:42:21[main] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: SubmitLogin 
-2025-12-07 19:42:21[main] [INFO] com.ui.pages.LoginPage Element found and performing Click 
-2025-12-07 19:42:22[main] [INFO] com.ui.pages.MyAccountPage Finding element with locator By.xpath: //a[@title='View my customer account']//span 
-2025-12-07 19:42:22[main] [ERROR] com.ui.listeners.TestListeners loginTest FAILED 
-2025-12-07 19:42:22[main] [ERROR] com.ui.listeners.TestListeners no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']//span"}
-  (Session info: chrome=142.0.7444.176)
+2025-12-14 15:51:28[main] [INFO] com.ui.listeners.TestListeners Test suite Started 
+2025-12-14 15:51:55[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Visiting the websitehttp://www.automationpractice.pl 
+2025-12-14 15:52:00[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners loginTest 
+2025-12-14 15:52:00[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners Verify valid user is able to login to the application 
+2025-12-14 15:52:00[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners [e2e, sanity] 
+2025-12-14 15:52:00[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Trying to perform click to go to Sign in page 
+2025-12-14 15:52:00[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Finding element with locator By.xpath: //a[contains(text(),"Sign in")] 
+2025-12-14 15:52:01[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Element found and performing Click 
+2025-12-14 15:52:02[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: email 
+2025-12-14 15:52:02[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Element found now enter text gauravv@gmail.com 
+2025-12-14 15:52:02[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: passwd 
+2025-12-14 15:52:03[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Element found now enter text password 
+2025-12-14 15:52:03[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: SubmitLogin 
+2025-12-14 15:52:03[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Element found and performing Click 
+2025-12-14 15:52:03[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.MyAccountPage Finding element with locator By.xpath: //a[@title='View my customer account']//span 
+2025-12-14 15:52:04[TestNG-test-UI Automation Test-1] [ERROR] com.ui.listeners.TestListeners loginTest FAILED 
+2025-12-14 15:52:04[TestNG-test-UI Automation Test-1] [ERROR] com.ui.listeners.TestListeners no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='View my customer account']//span"}
+  (Session info: chrome=143.0.7499.110)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2d6f498f5ebf9d7b921dd61b98a432b8, findElement {value=//a[@title='View my customer account']//span, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60936}, goog:processID: 17460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60936/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2d6f498f5ebf9d7b921dd61b98a432b8 
-2025-12-07 19:42:22[main] [INFO] com.ui.listeners.TestListeners Capturing Screenshot for failed test 
-2025-12-07 19:42:22[main] [INFO] com.ui.listeners.TestListeners Attaching Screenshot to the HTML File 
-2025-12-07 19:42:22[main] [INFO] com.ui.test.LoginTest Load the homePage of the Website 
-2025-12-07 19:42:22[main] [INFO] com.ui.pages.HomePage Launching the Browser: CHROME | Headless: false 
-2025-12-07 19:42:25[main] [INFO] com.ui.pages.HomePage Visiting the websitehttp://www.automationpractice.pl 
-2025-12-07 19:42:29[main] [INFO] com.ui.listeners.TestListeners loginTest 
-2025-12-07 19:42:29[main] [INFO] com.ui.listeners.TestListeners Verify valid user is able to login to the application 
-2025-12-07 19:42:29[main] [INFO] com.ui.listeners.TestListeners [e2e, sanity] 
-2025-12-07 19:42:29[main] [INFO] com.ui.pages.HomePage Trying to perform click to go to Sign in page 
-2025-12-07 19:42:29[main] [INFO] com.ui.pages.HomePage Finding element with locator By.xpath: //a[contains(text(),"Sign in")] 
-2025-12-07 19:42:29[main] [INFO] com.ui.pages.HomePage Element found and performing Click 
-2025-12-07 19:42:31[main] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: email 
-2025-12-07 19:42:31[main] [INFO] com.ui.pages.LoginPage Element found now enter text jasare9882@owlny.com 
-2025-12-07 19:42:31[main] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: passwd 
-2025-12-07 19:42:31[main] [INFO] com.ui.pages.LoginPage Element found now enter text password 
-2025-12-07 19:42:31[main] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: SubmitLogin 
-2025-12-07 19:42:31[main] [INFO] com.ui.pages.LoginPage Element found and performing Click 
-2025-12-07 19:42:33[main] [INFO] com.ui.pages.MyAccountPage Finding element with locator By.xpath: //a[@title='View my customer account']//span 
-2025-12-07 19:42:33[main] [INFO] com.ui.pages.MyAccountPage Element found and returning the visible text Garry Vijay 
-2025-12-07 19:42:33[main] [INFO] com.ui.listeners.TestListeners loginTest PASSED 
-2025-12-07 19:42:33[main] [INFO] com.ui.listeners.TestListeners Test suite Completed 
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5bc917f5aa1282f0f69cdc56b32a89ab, findElement {value=//a[@title='View my customer account']//span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.110 (74da94de124..., userDataDir: C:\Program Files (x86)\scop...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9225}, goog:processID: 4528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows XP, proxy: Proxy(), se:bidiEnabled: false, se:cdp: wss://cdp-mumbai.lambdatest..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bc917f5aa1282f0f69cdc56b32a89ab 
+2025-12-14 15:52:04[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners Capturing Screenshot for failed test 
+2025-12-14 15:52:05[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners Attaching Screenshot to the HTML File 
+2025-12-14 15:52:44[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Visiting the websitehttp://www.automationpractice.pl 
+2025-12-14 15:52:48[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners loginTest 
+2025-12-14 15:52:48[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners Verify valid user is able to login to the application 
+2025-12-14 15:52:48[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners [e2e, sanity] 
+2025-12-14 15:52:48[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Trying to perform click to go to Sign in page 
+2025-12-14 15:52:48[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Finding element with locator By.xpath: //a[contains(text(),"Sign in")] 
+2025-12-14 15:52:49[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.HomePage Element found and performing Click 
+2025-12-14 15:52:50[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: email 
+2025-12-14 15:52:50[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Element found now enter text jasare9882@owlny.com 
+2025-12-14 15:52:50[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: passwd 
+2025-12-14 15:52:51[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Element found now enter text password 
+2025-12-14 15:52:51[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Finding element with locator By.id: SubmitLogin 
+2025-12-14 15:52:51[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.LoginPage Element found and performing Click 
+2025-12-14 15:52:51[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.MyAccountPage Finding element with locator By.xpath: //a[@title='View my customer account']//span 
+2025-12-14 15:52:52[TestNG-test-UI Automation Test-1] [INFO] com.ui.pages.MyAccountPage Element found and returning the visible text Garry Vijay 
+2025-12-14 15:52:52[TestNG-test-UI Automation Test-1] [INFO] com.ui.listeners.TestListeners loginTest PASSED 
+2025-12-14 15:52:53[main] [INFO] com.ui.listeners.TestListeners Test suite Completed 
