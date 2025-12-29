@@ -38,7 +38,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4.4.3
         with:
-          name: screenshot
+          name: screenshots
           path: screenshots/
       - name: Upload HTML report as Artifacts
         if: always()
