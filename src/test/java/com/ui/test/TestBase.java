@@ -26,7 +26,7 @@ public class TestBase {
 	@BeforeMethod(description = "Load the homePage of the Website")
 	public void setup(
 		@Optional("chrome")	String browser, 
-		@Optional("false")	boolean isLambdaTest, 
+		@Optional("true")	boolean isLambdaTest, 
 		@Optional("true")	boolean isHeadless, ITestResult result) {
 
 		this.isLambdaTest = isLambdaTest;
