@@ -1,17 +1,17 @@
-name: Test Automation workflow
+# name: Test Automation workflow
 
 on:
   schedule:
     - cron: "00 18 * * *"
 
-  push:
+#  push:
     branches: ["master"]
 
-  pull_request:
+#  pull_request:
     branches: ["master"]
 
-jobs:
-  build:
+#jobs:
+#  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,7 +26,7 @@ jobs:
           cache: maven
 
       - name: Running Test automation framework with Maven
-        run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
+#        run: mvn test -X -Dbrowser=chrome -DisLambdaTest=true -DisHeadless=false
 
       - name: Upload Test Logs
         if: always()
@@ -49,18 +49,18 @@ jobs:
 
       - name: Test Execution Status
         if: always()
-        run: echo "Test Execution Completed"
+      #  run: echo "Test Execution Completed"
 
       - name: Copy Report to gh-pages folder  
         if: always()
 
-        run: |
+   #     run: |
           mkdir -p public/extent-reports/
           cp -R report.html public/extent-reports/
           cp -R screenshots/ public/extent-reports/screenshots/
           ls -l
 
-      - name: Deploy
+  #    - name: Deploy
         if: always()
         uses: JamesIves/github-pages-deploy-action@v4
         with:
